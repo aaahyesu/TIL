@@ -1,17 +1,16 @@
-<aside>
-<img src="/icons/light-bulb_gray.svg" alt="/icons/light-bulb_gray.svg" width="40px" /> 한 입 크기로 잘라먹는 리액트를 학습하며 정리한 내용입니다.
 
-</aside>
+> 한 입 크기로 잘라먹는 리액트를 학습하며 정리한 내용입니다.
+
 
 ## `useEffect`
 
----
+
 
 `useEffect` 함수는 **리액트 컴포넌트가 렌더링 될 때마다, 특정 작업을 실행할 수 있도록 하는 Hook** 이다.
 
 useEffect는 아래의 경우 특정 작업을 처리할 수 있게 해준다
 
-![스크린샷 2024-09-06 오후 3.52.02.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8e06beb8-1e47-4302-b650-af6302bede37/0b575661-1076-4c9a-9faf-6fb29888fcbc/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-09-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.52.02.png)
+<img width="771" alt="스크린샷 2024-09-06 오후 3 52 02" src="https://github.com/user-attachments/assets/9f3eaae0-2711-4c13-9297-a242c8473f99">
 
 **1. component가 mount 되었을 때**
 
@@ -193,11 +192,11 @@ useEffect(() => {
      - depth를 빈 배열로 전달 → mount 시 실행
      - 종료는 반대인 unmount가 될 때 종료
 
-   ![스크린샷 2024-09-06 오후 3.28.30.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8e06beb8-1e47-4302-b650-af6302bede37/464fc9f5-7707-4aac-a131-33a2a21e989f/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-09-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.28.30.png)
+       <img width="400" alt="스크린샷 2024-09-06 오후 3 28 30" src="https://github.com/user-attachments/assets/6e4394c1-2058-45d5-a30a-ef21c60b578b">
 
    - 초기 값 0, 조건문 참이므로 초기 마운트 후
      <Even/>컴포넌트 호출 useEffect 두번째 인수가빈 배열이므로 대기
 
-   ![스크린샷 2024-09-06 오후 3.28.43.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8e06beb8-1e47-4302-b650-af6302bede37/f3242c0a-7744-46c9-8dab-cf0dc0904c84/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-09-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_3.28.43.png)
+     <img width="400" alt="스크린샷 2024-09-06 오후 3 28 43" src="https://github.com/user-attachments/assets/b50e73ba-9e29-441d-a7af-b9058c325a95">
 
    - 1이 증가 된 후 useEffect 종료됨으로, useEffect 정리함수 실행 후 바로 반응하는update 출력
