@@ -1,0 +1,39 @@
+.header {
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header i {
+  font-size: 40px;
+  margin-right: 10px;
+  animation: move-diagonal 2s cubic-bezier(0.25, 0.1, 0.25, 1) 1 forwards;
+}
+
+@keyframes move-diagonal {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-100px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.header strong {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 48px;
+  text-align: center;
+}
+.header strong:nth-last-of-type(1) {
+  color: #4ea8de;
+  padding-left: 5px;
+}
+
+.header strong:nth-last-of-type(2) {
+  color: #1e6f9f;
+}

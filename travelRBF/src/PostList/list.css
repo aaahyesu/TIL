@@ -1,0 +1,13 @@
+.nolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 100px;
+  height: 150px;
+  gap: 1rem;
+  flex-direction: column;
+}
+.nolist i {
+  font-size: 3rem;
+  opacity: 0.5rem;
+}

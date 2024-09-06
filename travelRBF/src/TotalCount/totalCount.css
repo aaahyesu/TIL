@@ -1,0 +1,49 @@
+.count {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3rem 0 2rem 0;
+  gap: 0.5rem;
+  border-bottom: 1px solid #666;
+}
+.count > * {
+  padding: 0.5rem;
+}
+.count strong {
+  color: #8284fa;
+}
+.count span {
+  background-color: #57575799;
+
+  color: whitesmoke;
+  border-radius: 10px;
+}
+
+.postList {
+  padding-top: 1rem;
+}
+.list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  padding-left: 1rem;
+  background-color: #262626;
+  border-radius: 10px;
+}
+.list:hover {
+  background-color: #333;
+}
+.list p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.list i {
+  cursor: pointer;
+  display: block;
+  padding: 1rem;
+}
+
+.list i:hover {
+  color: gray;
+}
