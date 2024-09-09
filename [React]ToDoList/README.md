@@ -1,8 +1,10 @@
-# React + Vite
+# useReduce란?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div style="display: flex; justify-content: space-around;">
+  <img src="readmeImg/useState.png" alt="useState" style="width: 45%;">
+  <img src="readmeImg/useReducer.png" alt="useReducer" style="width: 45%;">
+</div>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 컴포넌트 내부에 새로운 State를 생성하는 React Hook
+- 모든 useState는 useReducer로 대체 가능
+  - 상태 관리 코드를 외부로 분리 할 수 있다..!
