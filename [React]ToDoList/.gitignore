@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-readmeImg
+
 
 # Editor directories and files
 .vscode/*
