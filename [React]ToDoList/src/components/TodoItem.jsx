@@ -25,16 +25,18 @@ const TodoItem = ({ id, isDone, content, date, onUpdate, onDelete }) => {
   );
 };
 
-// 고차 컴포넌트(HOC)
-// 메모 함수 안 두번째 인수로 콜백함수를 넣어 최적화 기능을 customize한다.
-export default memo(TodoItem, (prevProps, nextProps) => {
-  // 반환 값에 따라, Props가 바뀌었는지 안바뀌었는지 판단
-  // T -> Props 바뀌지 않음 -> 리렌더링 X
-  // F -> Props 바뀜 -> 리렌더링 O
+// // 고차 컴포넌트(HOC)
+// // 메모 함수 안 두번째 인수로 콜백함수를 넣어 최적화 기능을 customize한다.
+// export default memo(TodoItem, (prevProps, nextProps) => {
+//   // 반환 값에 따라, Props가 바뀌었는지 안바뀌었는지 판단
+//   // T -> Props 바뀌지 않음 -> 리렌더링 X
+//   // F -> Props 바뀜 -> 리렌더링 O
 
-  if (prevProps.id !== nextProps.id) return false;
-  if (prevProps.isDone !== nextProps.isDone) return false;
-  if (prevProps.date !== nextProps.date) return false;
+//   if (prevProps.id !== nextProps.id) return false;
+//   if (prevProps.isDone !== nextProps.isDone) return false;
+//   if (prevProps.date !== nextProps.date) return false;
 
-  return true;
-});
+//   return true;
+// });
+
+export default memo(TodoItem);
