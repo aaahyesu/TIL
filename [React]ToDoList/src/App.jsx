@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useRef, useReducer } from "react";
+import { useState, useRef, useReducer, useCallback } from "react";
 import Header from "./components/Header";
 import List from "./components/List";
 import Editor from "./components/Editor";
@@ -65,13 +65,14 @@ function App() {
     });
   };
 
-  const onDelete = (targetId) => {
+  const onDelete = useCallback((targetId) => {
     // 인수: todos 배열에서 targetId와 일치하는 Id를 갖는 요소만 삭제한 새로운 배열
     dispatch({
       type: "DELETE",
       targetId: targetId,
     });
-  };
+  }, []); // 첫 렌더링(마운트 시)에만 딱 한번 함수 생성
+
   return (
     <div className="App">
       <Header />

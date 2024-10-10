@@ -71,3 +71,13 @@ export default memo(TodoItem, (prevProps, nextProps) => {
 ```
 
 - 참고자료 : [HOC 패턴](https://patterns-dev-kr.github.io/design-patterns/hoc-pattern/)
+
+## `useCallback()` 객체 최적화
+
+```jsx
+// 첫번째 인수 : memoization 하고 싶은 함수
+const func = useCallback(() => {}, []); // 첫 렌더링(마운트 시)에만 딱 한번 함수 생성
+```
+
+- 꼭 최적화가 필요한 함수 , 컴포넌트 , 연산들에만 적용하는게 Good!
+- 참고자료 : [언제 최적화를 쓸까?](https://goongoguma.github.io/2021/04/26/When-to-useMemo-and-useCallback/)
